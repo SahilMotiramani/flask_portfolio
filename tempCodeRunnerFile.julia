@@ -1,0 +1,56 @@
+import matplotlib.pyplot as plt
+import networkx as nx
+
+# Create a directed graph
+G = nx.DiGraph()
+
+# Define nodes
+nodes = {
+    "User Input": (0, 5),
+    "User Profile\n(Risk, Goals)": (-2, 4),
+    "Market Data\n(Stock Prices, News)": (2, 4),
+    "User Queries\n(Chatbot)": (0, 4),
+    "AI Processing": (0, 3),
+    "Risk Profiling": (-2, 2),
+    "Portfolio Recommendation": (0, 2),
+    "Market Analysis": (2, 2),
+    "Stock Prediction": (0, 1),
+    "Output & Insights": (0, 0),
+    "Investment Suggestions": (-2, -1),
+    "Asset Allocation": (0, -1),
+    "Financial Insights": (2, -1),
+}
+
+# Add edges
+edges = [
+    ("User Profile\n(Risk, Goals)", "AI Processing"),
+    ("Market Data\n(Stock Prices, News)", "AI Processing"),
+    ("User Queries\n(Chatbot)", "AI Processing"),
+    ("AI Processing", "Risk Profiling"),
+    ("AI Processing", "Portfolio Recommendation"),
+    ("AI Processing", "Market Analysis"),
+    ("AI Processing", "Stock Prediction"),
+    ("Risk Profiling", "Output & Insights"),
+    ("Portfolio Recommendation", "Output & Insights"),
+    ("Market Analysis", "Output & Insights"),
+    ("Stock Prediction", "Output & Insights"),
+    ("Output & Insights", "Investment Suggestions"),
+    ("Output & Insights", "Asset Allocation"),
+    ("Output & Insights", "Financial Insights"),
+]
+
+# Add nodes to graph
+for node, pos in nodes.items():
+    G.add_node(node, pos=pos)
+
+# Add edges to graph
+G.add_edges_from(edges)
+
+# Draw the graph
+plt.figure(figsize=(10, 8))
+pos = {node: (x, y) for node, (x, y) in nodes.items()}
+nx.draw(G, pos, with_labels=True, node_size=3000, node_color="lightblue", edge_color="gray", font_size=8, font_weight="bold", arrows=True)
+
+# Show the diagram
+plt.title("AI-Powered Wealth & Asset Management System Architecture")
+plt.show()

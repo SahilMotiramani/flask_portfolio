@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<header class="hero">
+    <div class="hero-overlay">
+        <h1>Welcome to My Portfolio</h1>
+        <p class="lead">Full Stack Developer | Data Science Enthusiast | Blockchain & DevOps Learner</p>
+        <a href="/contact" class="btn btn-primary btn-lg">Contact Me</a>
+    </div>
+</header>
+
+<!-- About Section -->
+<section class="container text-center py-5">
+    <h2>About Me</h2>
+    <div class="row align-items-center">
+        <div class="col-md-4">
+            <img src="{{ url_for('static', filename='images/Sahil.png') }}" alt="Sahil Motiramani" class="img-fluid rounded-circle shadow-lg" width="250">
+        </div>
+        <div class="col-md-8">
+            <p>Hi! I'm <strong>Sahil Motiramani</strong>, a passionate software developer skilled in Python, Java, .NET, Django, and MERN. 
+            I have experience in AI/ML, blockchain development, and DevOps automation.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section class="container py-5">
+    <h2 class="text-center">My Skills</h2>
+    <div class="row text-center">
+        <div class="col-md-4">
+            <h4>Programming</h4>
+            <p>Python, Java, JavaScript, .NET</p>
+        </div>
+        <div class="col-md-4">
+            <h4>Web Development</h4>
+            <p>HTML, CSS, JavaScript, React, Node.js, Django</p>
+        </div>
+        <div class="col-md-4">
+            <h4>Data Science & DevOps</h4>
+            <p>Machine Learning, Blockchain, Apache Spark, Jenkins, Docker, Kubernetes</p>
+        </div>
+    </div>
+</section>
+{% endblock %}

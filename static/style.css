@@ -1,0 +1,28 @@
+/* Hero Section */
+.hero {
+    background: url('../static/images/hero-bg.jpg') no-repeat center center/cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    color: white;
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+/* About Section */
+.img-fluid {
+    border: 5px solid #007bff;
+}
+
+/* Button Hover */
+.btn-primary:hover {
+    background-color: #0056b3;
+    box-shadow: 0px 4px 10px rgba(0, 123, 255, 0.5);
+}

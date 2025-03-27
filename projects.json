@@ -1,0 +1,20 @@
+[
+    {
+        "title": "FarmBazaar AI",
+        "description": "AI-powered crop selection and price prediction platform.",
+        "image": "images/project1.png",
+        "link": "https://www.youtube.com/watch?v=SHvYl3GOpko&ab_channel=SahilMotiramani"
+    },
+    {
+        "title": "Surveillance System",
+        "description": "ML-based security surveillance system with real-time monitoring.",
+        "image": "images/project2.png",
+        "link": "https://www.youtube.com/watch?v=nF4b75izTa8&ab_channel=SahilMotiramani"
+    },
+    {
+        "title": "Appointment Booking System",
+        "description": "Seamless appointment booking with doctors (All 3 profiles included i.e Doctor,patient,admin).",
+        "image": "images/project3.png",
+        "link": "https://www.youtube.com/watch?v=TkthGiStQEI&ab_channel=SahilMotiramani"
+    }
+]
